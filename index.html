@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="section-home">
+                <h3 class="team-home">HOME</h3>
+                <div class="display display-home"></div>
+                 <p id="home-score"  class="points-text points-home-text">0</p>
+                 <div class="buttons-home buttons">
+                     <button id="add-one-point-home-el" class="add-points add-one-point-home" onclick="addOnePointHome()">+1</button>
+                     <button id="add-two-points-home-el" class="add-points add-two-points-home" onclick="addTwoPointsHome()">+2 </button>
+                     <button id="add-three-points-home-el" class="add-points add-three-points-home" onclick="addThreePointsHome()">+3</button>
+                 </div>
+            </div>
+            <div class="section-guest">
+                <h3 class="team-guest">GUEST</h3>
+                <div class="display display-guest"></div>                 
+                <p id="guest-score" class="points-text points-guest-text">0</p>
+                <div class="buttons-guest buttons">
+                     <button id="add-one-point-guest-el" class="add-points add-one-point-guest" onclick="addOnePointGuest()">+1</button>
+                     <button id="add-two-points-guest-el" class="add-points add-two-points-guest" onclick="addTwoPointsGuest()">+2</button>
+                     <button id="add-three-points-guest-el" class="add-points add-three-points-guest" onclick="addThreePointsGuest()">+3</button>
+                 </div>
+            </div>
+                 <button id="reset-btn" onclick="resetScore()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
